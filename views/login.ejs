@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsf Bank login</title>
+    <link rel="stylesheet" href="css/stylelogin.css">
+</head>
+<body>
+    
+    <form action="/login" method="post">
+        <div class="imgcontainer">
+          <img src="image/logo.png" alt="Avatar" class="avatar">
+        </div>
+      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username ex: sanjeev" name="uname" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password ex: sanjeev" name="psw" required>
+      
+          <button type="submit">Login</button>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="history.back()" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+</body>
+</html>

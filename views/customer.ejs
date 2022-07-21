@@ -1,0 +1,43 @@
+<%-include("./header") %>
+<div class="contain"></div>
+<div class="bg-text">
+      <h3>Customer Account Details</h3>
+
+          <ul>
+            <li>
+              <span> Name: </span>
+              <%= customer.name %>
+            </li>
+            <li>
+              <span> Gender: </span>
+              <%=customer.gender %>
+            </li>
+          </ul>
+
+        <ul>
+          <li>
+            <span> Age : </span>
+            <%= customer.age %>
+          </li>
+          <li>
+            <span> Money: </span>
+            <%=customer.money %>
+          </li>
+          <li>
+            <span> Password : </span>
+            <%= customer.password %>
+          </li>
+          <li>
+            <span> Residential Address: </span>
+            <%= customer.address %>
+          </li>
+        </ul>
+      <br>
+      <a href="/">Back..</a>
+      <a href="/transfer">View & Transfer!</a>
+      
+</div>
+
+<%-include("./footer") %>
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsf Bank login</title>
+    <link rel="stylesheet" href="css/stylelogin.css">
+</head>
+<body>
+    
+    <form action="/register" method="post">
+        <div class="imgcontainer">
+          <img src="image/logo.png" alt="Avatar" class="avatar">
+        </div>
+      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <label for="ugender"><b>Gender</b></label>
+          <input type="text" placeholder="Enter Gender" name="ugender" required>
+
+          <label for="uage"><b>Age</b></label>
+          <input type="text" placeholder="Enter age" name="uage" required>
+
+          <label for="umoney"><b>Age</b></label>
+          <input type="number" placeholder="Enter money" name="umoney" required>
+
+          <label for="uemail"><b>Email Id</b></label>
+          <input type="text" placeholder="Enter email" name="uemail" required>
+
+          <label for="uaddress"><b>Address</b></label>
+          <input type="text" placeholder="Enter address" name="uaddress" required>
+      
+          <button type="submit">Register !</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <button onclick="history.back()" type="button" class="cancelbtn">Cancel</button>
+        </div>
+      </form>
+</body>
+</html>
