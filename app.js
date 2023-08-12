@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
@@ -10,7 +11,8 @@ app.set("view engine","ejs");
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 
-const connection=mongoose.connect("mongodb+srv://admin:admin123@bankingsystemcluster.mqzgj.mongodb.net/bankingsystemdb",{useNewUrlParser:true});
+const mongoURI = process.env.mongoURI
+const connection=mongoose.connect(mongoURI,{useNewUrlParser:true});
 
 const itemsSchema={   
     name:String,
